@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div id = "container">
+
+      <form id="formulario">
+        <div id="userFirstInfo">
+          
+          <h1 id = "titulo">Formulario</h1>
+          <p>
+            <label for="name"><input  type="text" placeholder="Nombre(s)" maxlength="100"  id="name" /></label>
+          </p>
+          <p>
+            <label for="lastname"><input  type="text" placeholder="Apellido(s)" maxlength="100" id="lastname "/></label>
+          </p>
+          <p>
+            <label for="age"><input  type="number" placeholder="Edad" min = 0 max="120" id="age" /></label>
+          </p>
+          <p>
+          <label>Genero:
+            <select id="gender">
+              <option value="otherGender">Otro</option>
+              <option value="masc">Masculino</option>
+              <option value="fem">Femenino</option>
+            </select>
+          </label></p>
+          <!-- TODO incluir opcion para especificar otro genero -->
+        </div>
+
+        <div id="userExtraInfo">
+          <p>
+            <label for="phoneNumber"></label><input  type="tel" placeholder="Telefono"  maxlength="20" id="PhoneNumber" /></label>
+          </p>
+          <p>
+            <label for="email"><input  type="email" placeholder="e-mail" maxlength="100" id="email" /></label>
+          </p>
+          
+          <p>
+            <label for="dob">Fecha de nacimiento:<input  type="date" id="dob" /></label>
+          </p>
+          
+          <p>
+            <label for="userBrief"
+              >Cuentanos mas sobre ti:
+              <textarea id="userInfo" maxlength="200" cols="20" rows="2"></textarea>
+            </label>
+          </p>
+        </div>
+
+        <div id="userPref">
+
+          <p>
+            <label>Que editor de codigo prefieres:
+              <select id="favCodeEditor">
+                <option value="selectOne">----------select----------</option>
+                <option value="bluefish">Bluefish</option>
+                <option value="vim">VIM</option>
+                <option value="spacemacs">Spacemacs</option>
+                <option value="emacs">Emacs</option>
+                <option value="vscode">Visual Studio Code</option> 
+              </select>
+              </label></p>
+            <!-- TODO incluir opcion "otro editor de codigo con opcion de texto" -->
+            
+    
+          <p><b>Lenguajes de programacion preferidos</b></p>
+          <input  type="checkbox" value="java" />
+          <label>Java</label><br>
+          <input  type="checkbox" value="javascript" />
+          <label>Javascript</label><br>
+          <input  type="checkbox" value="typescript" />
+          <label>Typescript</label><br>
+          <input  type="checkbox" value="python" />
+          <label>Python</label><br>
+          <input  type="checkbox" value="php" />
+          <label>PHP</label><br>
+          <input  type="checkbox" value="kotlin" />
+          <label>Kotlin</label><br>
+          <input  type="checkbox" value="c" />
+          <label>C</label><br>
+          <input  type="checkbox" value="c++" />
+          <label>C++</label><br>
+          <input  type="checkbox" value="c#" />
+          <label>C#</label><br>
+          <input  type="checkbox" value="ruby" />
+          <label>Ruby</label><br>
+          <input  type="checkbox" value="sql" />
+          <label>SQL</label><br>
+          <input  type="checkbox" value="go" />
+          <label>Go</label><br>
+          <input  type="checkbox" value="rust" />
+          <label>Rust</label><br>
+        </div>
+        
+        <div id="buttns">
+        
+        <button type="submit" id="sumbit">Enviar</button><br>
+        <button type="reset" value="reset">Reset</button>
+        </div>
+  
+  
+      </form>
+    </div>
+    <script src="./script.js"></script>
+
+  </body>
+</html>
